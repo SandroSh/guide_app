@@ -1,0 +1,7 @@
+.brockmann1 {
+    font-size: 110px; /* Set font size to 110 pixels */
+    font-family: 'eurostile', sans-serif; /* Example font family */
+    font-weight: bold; /* Semi-bold */
+    line-height: 1.02; /* 102% */
+    letter-spacing: -0.03em; /* -3% */
+  }
