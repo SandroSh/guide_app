@@ -12,7 +12,6 @@ const App = () => {
   return (
     <div className='w-max-[1920px] flex justify-center'>
       <Navbar/>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

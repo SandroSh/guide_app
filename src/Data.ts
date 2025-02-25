@@ -4,6 +4,14 @@ export type navLink = {
   route: string;
 };
 
+export type homeCard = {
+  imgUrl: string;
+  title: string;
+  linkTitle: string;
+  isActive:boolean;
+};
+
+
 export const navData: navLink[] = [
   {
     title: "მთავარი",
@@ -31,3 +39,25 @@ export const navData: navLink[] = [
     route: "/contact",
   },
 ];
+
+export const homeCards: homeCard[] = [
+  { 
+    imgUrl:'public/assets/card-1.svg',
+    title:'ტურები რაჭაში',
+    linkTitle:'გამოგვყევი',
+    isActive:false
+  },
+  { 
+    imgUrl:'public/assets/card-2.svg',
+    title: 'ადილობრივი მეწარმეობა',
+    linkTitle:'შეიძინე',
+    isActive:true
+  },
+  { 
+    imgUrl:'public/assets/card-3.svg',
+    title:'სასტუმროები',
+    linkTitle:'დაჯავშნე',
+    isActive:false
+  },
+
+]
