@@ -9,6 +9,7 @@ export type homeCard = {
   title: string;
   linkTitle: string;
   isActive:boolean;
+  hasBorder:boolean;
 };
 
 
@@ -45,19 +46,22 @@ export const homeCards: homeCard[] = [
     imgUrl:'public/assets/card-1.svg',
     title:'ტურები რაჭაში',
     linkTitle:'გამოგვყევი',
-    isActive:false
+    isActive:false,
+    hasBorder:true
   },
   { 
     imgUrl:'public/assets/card-2.svg',
     title: 'ადილობრივი მეწარმეობა',
     linkTitle:'შეიძინე',
-    isActive:true
+    isActive:true,
+    hasBorder:true
   },
   { 
     imgUrl:'public/assets/card-3.svg',
     title:'სასტუმროები',
     linkTitle:'დაჯავშნე',
-    isActive:false
+    isActive:false,
+    hasBorder:false
   },
 
 ]

@@ -10,8 +10,10 @@ import Contact from './Components/Contact'
 
 const App = () => {
   return (
-    <div className='w-max-[1920px] flex justify-center'>
-      <Navbar/>
+    <>
+      <div className='flex justify-center w-full'>
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -19,7 +21,7 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </>
   )
 }
 
