@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         {/* Swiper Start */}
-        <div className='max-w-[900px] max-h-[550px]'>
+        <div className='max-w-[900px]'>
           <Swiper navigation={true} modules={[Navigation, Autoplay]}  autoplay={{delay:3000, disableOnInteraction:false}} className="mySwiper rounded-2xl" >
             <SwiperSlide><img src={SwiperImg1} className='' alt="homeImg" /></SwiperSlide>
             <SwiperSlide><img src={SwiperImg2} className='' alt="homeImg" /></SwiperSlide>
@@ -42,7 +42,7 @@ const Home = () => {
           </Swiper>
         </div>
         {/* Swiper End */}
-        <div className='justify-self-end'>
+        <div className='self-end mb-[65px]'>
           <p className='rotate-90 text-darkBlue self-end justify-self-end w-max'>Racha with love 2022</p>
         </div>
 

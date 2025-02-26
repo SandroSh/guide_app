@@ -26,6 +26,14 @@ export type serviceCardType = {
   isLast:boolean;
 }
 
+export type hotelCardType = {
+  imgUrl:string;
+  title:string;
+  isFirst:boolean;
+  description:string;
+  starNum:number;
+}
+
 export const navData: navLink[] = [
   {
     title: "მთავარი",
@@ -120,6 +128,50 @@ export const serviceCardData: serviceCardType[] = [
       arrowIconUrl: "public/assets/goto_blue.svg",
       isLast:true
     },
+];
 
-
+export const hotelCards: hotelCardType[] = [
+  {
+    imgUrl: "public/assets/hotels-1.png",
+    title:'სასტუმრო სანსეტ შოვი',
+    isFirst: true,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 4
+  },
+  {
+    imgUrl: "public/assets/hotels-2.png",
+    title:'სასტუმრო სანსეტ შოვი 2',
+    isFirst: false,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 5
+  },
+  {
+    imgUrl: "public/assets/hotels-3.png",
+    title:'სასტუმრო სანსეტ შოვი 3',
+    isFirst: false,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 3
+  },
+  {
+    imgUrl: "public/assets/hotels-2.png",
+    title:' სასტუმრო სანსეტ შოვი 4',
+    isFirst: false,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 2
+  },
+  {
+    imgUrl: "public/assets/hotels-1.png",
+    title:' სასტუმრო სანსეტ შოვი 5',
+    isFirst: false,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 3
+  },
+  {
+    imgUrl: "public/assets/hotels-3.png",
+    title:'სასტუმრო სანსეტ შოვი 7',
+    isFirst: false,
+    description: "Listings >> Pizza Place >>Restaurant",
+    starNum: 4
+  },
+  
 ]

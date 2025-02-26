@@ -1,6 +1,5 @@
 .swiper-button-prev {
   left: 88% !important;
-  
 }
 
 .swiper-button-next::after,
@@ -17,4 +16,67 @@
   height: 40px !important;
   background: rgba(0, 0, 0, 0.7) !important;
   border-radius: 50% !important;
+}
+
+
+
+.mySwiper2 {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+.custom-pagination {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: 45px !important; 
+  height: 45px !important;
+  background: transparent !important;
+  color: #25304a !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid #25304a !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Active number bullet */
+.swiper-pagination-bullet-active {
+  background: #25304a !important;
+  color: #ffffff !important;
+}
+
+
+
+/* Hotel image gradient */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hotel-img {
+  width: 100%;
+  height: auto;
+  
+  /* Adjust the gradient to start fading from the middle */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
