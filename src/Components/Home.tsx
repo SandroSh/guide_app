@@ -3,7 +3,7 @@ import SwiperImg2 from '../../public/assets/swiper-2.png'
 import SwiperImg3 from '../../public/assets/swiper-3.png'
 import SwiperImg4 from '../../public/assets/swiper-4.png'
 import { homeCard, homeCards } from '../Data'
-import AboutUs from './AboutUs'
+
 import HomeCard from './HomeCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
@@ -11,7 +11,6 @@ import '../../node_modules/swiper/swiper-bundle.css'
 
 const Home = () => {
   return (
-
     <div className='w-full max-w-[1300px] mx-auto mt-[130px]'>
       <div className="flex items-center justify-between">
         {/* right container */}
@@ -33,22 +32,23 @@ const Home = () => {
             </div>
           </div>
         </div>
+        {/* Swiper Start */}
         <div className='max-w-[900px] max-h-[550px]'>
-          <Swiper navigation={true} modules={[Navigation, Autoplay]}  autoplay={{delay:3000, disableOnInteraction:false}} className="mySwiper" >
+          <Swiper navigation={true} modules={[Navigation, Autoplay]}  autoplay={{delay:3000, disableOnInteraction:false}} className="mySwiper rounded-2xl" >
             <SwiperSlide><img src={SwiperImg1} className='' alt="homeImg" /></SwiperSlide>
             <SwiperSlide><img src={SwiperImg2} className='' alt="homeImg" /></SwiperSlide>
             <SwiperSlide><img src={SwiperImg3} className='' alt="homeImg" /></SwiperSlide>
             <SwiperSlide><img src={SwiperImg4} className='' alt="homeImg" /></SwiperSlide>
           </Swiper>
         </div>
-
+        {/* Swiper End */}
         <div className='justify-self-end'>
           <p className='rotate-90 text-darkBlue self-end justify-self-end w-max'>Racha with love 2022</p>
         </div>
 
 
       </div>
-      <div className=' w-full h-auto flex justify-between  items-center mt-[75px]'>
+      <div className='flex justify-between items-center mt-[75px]'>
         {
           homeCards.map((item: homeCard, i) => <HomeCard data={item} key={i} />)
         }

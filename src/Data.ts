@@ -12,6 +12,19 @@ export type homeCard = {
   hasBorder:boolean;
 };
 
+export type sectionHeaderType = {
+  title:string;
+  numeration:string;
+  description:string;
+}
+
+export type serviceCardType = {
+  iconUrl:string;
+  title:string;
+  color:string;
+  arrowIconUrl:string;
+  isLast:boolean;
+}
 
 export const navData: navLink[] = [
   {
@@ -63,5 +76,50 @@ export const homeCards: homeCard[] = [
     isActive:false,
     hasBorder:false
   },
+
+]
+
+export const sectionHeaders: sectionHeaderType[] = [
+  {
+    title:'ჩვენს შესახებ',
+    numeration:'01',
+    description:'ჩვენ ვაერთიანებთ რეგიონული მასშტაბის ტურისტულ ობიექტებს, სერვისებსა და ღირსშესანიშნაობებს.'
+  },
+  {
+    title:'სერვისები',
+    numeration:'02',
+    description:'ჩვენ გთავაზობთ'
+  },
+  {
+    title:'სასტუმროები',
+    numeration:'03',
+    description:'დაჯავშნე სასტუმროები, ჩვენი პლათფორმის საშუალებით, სადაც ჯერ კიდევ უცნობ და საინტერესო სივრცეებს აღმოაჩენ'
+  },
+]
+
+
+export const serviceCardData: serviceCardType[] = [
+    {
+      iconUrl: "public/assets/Icon map-travel-agency.svg",
+      title: "ტურები რაჭაში",
+      color: "text-primaryBlue",
+      arrowIconUrl: "public/assets/goto_blue.svg",
+      isLast: false
+    },
+    {
+      iconUrl: "public/assets/Icon awesome-shopping-basket-1.svg",
+      title: "ადგილობრივი მეწარმეობა",
+      color: "text-primaryRed",
+      arrowIconUrl: "public/assets/goto_red.svg",
+      isLast:false
+    },
+    {
+      iconUrl: "public/assets/Icon awesome-building-1.svg",
+      title: "სასტუმროები",
+      color: "text-primaryBlue",
+      arrowIconUrl: "public/assets/goto_blue.svg",
+      isLast:true
+    },
+
 
 ]

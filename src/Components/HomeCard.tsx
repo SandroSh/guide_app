@@ -4,8 +4,8 @@ import GoToRedIcon from '../../public/assets/goto_red.svg'
 const HomeCard = ({ data }: { data: homeCard }) => {
     return (
 
-        <div className='h-[100px] max-w-[300px]'>
-            <div className='flex flex-col items-start justify-around p-[50px]'>
+        <div className=' max-w-[300px]'>
+            <div className='flex flex-col items-start justify-around'>
                 <div className='flex justify-start items-center'>
                     <img src={data.imgUrl} alt=" title icon" />
                     <h1 className={data.isActive ? 'font-[700] text-primaryRed ml-[19px]' : 'font-[700] ml-[19px]'}>{data.title}</h1>
