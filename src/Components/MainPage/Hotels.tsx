@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { hotelCards, sectionHeaders } from "../Data"
-import SectionHeader from "./SectionHeader"
-import { Pagination } from "swiper/modules"
-import '../../node_modules/swiper/swiper-bundle.css'
-import '../../node_modules/swiper/swiper-bundle.css';
+import { hotelCards, sectionHeaders } from "../../Data"
+import SectionHeader from "../SectionHeader"
+import { Autoplay, Pagination } from "swiper/modules"
+import '../../../node_modules/swiper/swiper-bundle.css'
+
 import HotelCard from "./HotelCard"
 import { useState } from "react"
 
@@ -26,7 +26,7 @@ const Hotels = () => {
         setSlides(updatedSlides);
     }
     return (
-        <div className="mt-[142px]  flex flex-col justify-center items-center">
+        <div className="mt-[142px] mb-[210px] flex flex-col justify-center items-center">
             <SectionHeader data={sectionHeaders[2]} />
             <div className="max-w-[1300px] w-full flex flex-col items-center justify-center mt-[50px]" >
                 <Swiper
@@ -39,7 +39,8 @@ const Hotels = () => {
                             return `<span class="${className} custom-bullet">${index + 1}</span>`;
                         }
                     }}
-                    modules={[Pagination]}
+                    autoplay={{delay:3000, disableOnInteraction:false}}
+                    modules={[Pagination, Autoplay]}
                     onSlideChange={handleSlideChange}
                     className="mySwiper mySwiper2"
                 >

@@ -33,6 +33,11 @@ export type hotelCardType = {
   description:string;
   starNum:number;
 }
+export type TeamMemType = {
+  url:string;
+  name:string;
+  position:string;
+}
 
 export const navData: navLink[] = [
   {
@@ -174,4 +179,29 @@ export const hotelCards: hotelCardType[] = [
     starNum: 4
   },
   
+]
+
+export const teamMembers:TeamMemType[] = [
+  {
+    url: "../../public/assets/teamImg.png",
+    name: "ნიკო კიკვიძე",
+    position: "პოზიცია"
+  },
+  {
+    url: "../../public/assets/teamImg.png",
+    name: "თეკლა ლობჟანიძე",
+    position: "პოზიცია"
+  },
+  {
+    url: "../../public/assets/teamImg.png",
+    name: "თიკო სამხარაძე",
+    position: "პოზიცია"
+  },
+  {
+    url: "../../public/assets/teamImg.png",
+    name: "გიორგი ლობჯანიძე",
+    position: "პოზიცია"
+  },
+  
+
 ]

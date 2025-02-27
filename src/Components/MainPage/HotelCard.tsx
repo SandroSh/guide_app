@@ -1,11 +1,11 @@
-import { hotelCardType } from "../Data"
-import BlueIcon from '../../public/assets/goto_blue.svg'
-import RedIcon from '../../public/assets/goto_red.svg'
-import NotFilledSIcon from '../../public/assets/star2.svg'
-import FilledSIcon from '../../public/assets/star1.svg'
+import { hotelCardType } from "../../Data"
+import BlueIcon from '../../../public/assets/goto_blue.svg'
+import RedIcon from '../../../public/assets/goto_red.svg'
+import NotFilledSIcon from '../../../public/assets/star2.svg'
+import FilledSIcon from '../../../public/assets/star1.svg'
+
+
 const HotelCard = ({ data }: { data: hotelCardType }) => {
-
-
 
     return (
         <div className='flex flex-col border-b-2 border-gray-200 cursor-pointer'>

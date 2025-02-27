@@ -1,6 +1,6 @@
-import { sectionHeaders } from "../Data"
-import SectionHeader from "./SectionHeader"
-import AboutUsImg from '../../public/assets/about-us-img.png'
+import { sectionHeaders } from "../../Data"
+import SectionHeader from "../SectionHeader"
+import AboutUsImg from '../../../public/assets/about-us-img.png'
 
 
 const AboutUs = () => {

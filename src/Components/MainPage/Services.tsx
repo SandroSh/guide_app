@@ -1,6 +1,6 @@
-import { sectionHeaders, serviceCardData } from "../Data"
-import SectionHeader from "./SectionHeader"
-import ServicesImg from '../../public/assets/services-img.png'
+import { sectionHeaders, serviceCardData } from "../../Data"
+import SectionHeader from "../SectionHeader"
+import ServicesImg from '../../../public/assets/services-img.png'
 import ServiceCard from "./ServiceCard"
 const Services = () => {
   return (

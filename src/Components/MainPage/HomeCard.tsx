@@ -1,6 +1,6 @@
-import { homeCard } from '../Data'
-import GoToBlueIcon from '../../public/assets/goto_blue.svg'
-import GoToRedIcon from '../../public/assets/goto_red.svg'
+import { homeCard } from '../../Data'
+import GoToBlueIcon from '../../../public/assets/goto_blue.svg'
+import GoToRedIcon from '../../../public/assets/goto_red.svg'
 const HomeCard = ({ data }: { data: homeCard }) => {
     return (
 

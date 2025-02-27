@@ -4,7 +4,7 @@ import YLogo from '../../public/assets/youtube-svgrepo-com.svg'
 
 const Footer = () => {
     return (
-        <div className='w-full max-w-[100vw] bg-primaryBlue mt-[210px] flex justify-center pt-[58px] pb-[58px]'>
+        <div className='w-full max-w-[100vw] bg-primaryBlue flex justify-center pt-[58px] pb-[58px]'>
             <div className="max-w-[1300px] w-full flex items-center justify-between " >
                 <p className='font-bold text-white' >Racha with love All rights reserved Copyrights 2022</p>
                 <div className='flex justify-between items-center'>
