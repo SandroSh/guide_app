@@ -25,7 +25,6 @@ export type serviceCardType = {
   arrowIconUrl:string;
   isLast:boolean;
 }
-
 export type hotelCardType = {
   imgUrl:string;
   title:string;
@@ -66,7 +65,6 @@ export const navData: navLink[] = [
     route: "/contact",
   },
 ];
-
 export const homeCards: homeCard[] = [
   { 
     imgUrl:'public/assets/card-1.svg',
@@ -91,7 +89,6 @@ export const homeCards: homeCard[] = [
   },
 
 ]
-
 export const sectionHeaders: sectionHeaderType[] = [
   {
     title:'ჩვენს შესახებ',
@@ -108,9 +105,22 @@ export const sectionHeaders: sectionHeaderType[] = [
     numeration:'03',
     description:'დაჯავშნე სასტუმროები, ჩვენი პლათფორმის საშუალებით, სადაც ჯერ კიდევ უცნობ და საინტერესო სივრცეებს აღმოაჩენ'
   },
+  {
+    title:'სასტუმროები',
+    numeration:'01',
+    description:'დაჯავშნე სასტუმროები, ჩვენი პლათფორმის საშუალებით, სადაც ჯერ კიდევ უცნობ და საინტერესო სივრცეებს აღმოაჩენ'
+  },
+  {
+    title:'ადგილობრივი მეწარმეობა',
+    numeration:'02',
+    description:'შეიძინე ადგილობრივად რაჭაში წარმოებული უნიკალური ნივთები. აღმოაჩინე ჩვენთან ერთდ!'
+  },
+  {
+    title:'ტურები რაჭაში',
+    numeration:'03',
+    description:'მიიღე ინფორმაცია რაჭაში არსებული ღირსშესანიშნაობებისა და ტურისტული ობიექტების შესახებ, ეწვიე მათ ჩვენთან ერთად.'
+  },
 ]
-
-
 export const serviceCardData: serviceCardType[] = [
     {
       iconUrl: "public/assets/Icon map-travel-agency.svg",
@@ -134,7 +144,6 @@ export const serviceCardData: serviceCardType[] = [
       isLast:true
     },
 ];
-
 export const hotelCards: hotelCardType[] = [
   {
     imgUrl: "public/assets/hotels-1.png",
@@ -180,7 +189,6 @@ export const hotelCards: hotelCardType[] = [
   },
   
 ]
-
 export const teamMembers:TeamMemType[] = [
   {
     url: "../../public/assets/teamImg.png",

@@ -8,6 +8,7 @@ import HomeCard from './HomeCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from "swiper/modules";
 import '../../../node_modules/swiper/swiper-bundle.css'
+import ThemeSwitcher from '../ThemeSwitcher'
 
 const Home = () => {
   return (
@@ -25,20 +26,21 @@ const Home = () => {
           </div>
 
           {/* color switcher */}
-          <div className="flex items-center mt-auto absolute bottom-0">
+          {/* <div className="flex items-center mt-auto absolute bottom-0">
             <span className="text-gray-800 font-medium">DARK MODE</span>
             <div className="w-14 h-7 flex items-center bg-gray-400 rounded-full p-1 ml-[10px]">
               <div className="w-5 h-5 bg-white rounded-full shadow-md translate-x-0"></div>
             </div>
-          </div>
+          </div> */}
+          <ThemeSwitcher/>
         </div>
         {/* Swiper Start */}
         <div className='max-w-[900px] '>
           <Swiper navigation={true} modules={[Navigation, Autoplay]}  autoplay={{delay:3000, disableOnInteraction:false}} className="mySwiper rounded-2xl" >
-            <SwiperSlide><img src={SwiperImg1} className='' alt="homeImg" /></SwiperSlide>
-            <SwiperSlide><img src={SwiperImg2} className='' alt="homeImg" /></SwiperSlide>
-            <SwiperSlide><img src={SwiperImg3} className='' alt="homeImg" /></SwiperSlide>
-            <SwiperSlide><img src={SwiperImg4} className='' alt="homeImg" /></SwiperSlide>
+            <SwiperSlide><img src={SwiperImg1} className='starting-img' alt="homeImg" /></SwiperSlide>
+            <SwiperSlide><img src={SwiperImg2} className='starting-img' alt="homeImg" /></SwiperSlide>
+            <SwiperSlide><img src={SwiperImg3} className='starting-img' alt="homeImg" /></SwiperSlide>
+            <SwiperSlide><img src={SwiperImg4} className='starting-img' alt="homeImg" /></SwiperSlide>
           </Swiper>
         </div>
         {/* Swiper End */}

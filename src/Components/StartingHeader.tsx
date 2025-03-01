@@ -2,7 +2,7 @@ import MainImg from '../../public/assets/swiper-2.png'
 import Vtext from '../../public/assets/v-icon.svg'
 
 
-const StartingHeader = () => {
+const StartingHeader = ({title}:{title:string}) => {
   return (
   
     <div className="flex justify-between">
@@ -10,7 +10,7 @@ const StartingHeader = () => {
       <div className='flex max-w-[250px] justify-center flex-col relative'>
         <div className="z-10">
           <h1 className="text-[65px] font-[900] text-gray-900 whitespace-nowrap">
-            ჩვენი გუნდი
+            {title}
           </h1>
         </div>
 
@@ -25,7 +25,6 @@ const StartingHeader = () => {
         <img src={MainImg} className='w-[65vw] h-[400px]' alt="homeImg" />
         <img src={Vtext} className='self-end mr-5' alt="homeImg" />
       </div>
-
     </div>
 
 
